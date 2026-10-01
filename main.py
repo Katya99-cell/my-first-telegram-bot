@@ -22,7 +22,7 @@ from database.db import Database
 class TelegramBot:
     def __init__(self):
         # Инициализируем бота и диспетчер
-        self.bot = Bot(token="8994837787:AAGRDC264FqoeDAHecQx1Cg_FthgQG8siQc")
+        self.bot = Bot(token="")
         self.dp = Dispatcher()
         self.db = Database()
         
