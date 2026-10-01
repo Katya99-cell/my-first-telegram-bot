@@ -1,0 +1,392 @@
+2026-09-23 21:21:24 - [INFO] - root - Бот инициализирован...
+2026-09-23 21:21:24 - [INFO] - aiogram.dispatcher - Start polling
+2026-09-23 21:21:24 - [INFO] - aiogram.dispatcher - Run polling for bot @Katya20121999_bot id=8994837787 - 'My first telegram bot'
+2026-09-23 21:21:44 - [INFO] - middlewares.logging_middleware - [Другое] 7965113363 @katya201299: -
+2026-09-23 21:21:45 - [INFO] - middlewares.logging_middleware - Обработано за: 0.365 сек.
+2026-09-23 21:21:45 - [INFO] - aiogram.event - Update id=499800178 is handled. Duration 366 ms by bot id=8994837787
+2026-09-23 21:21:47 - [INFO] - middlewares.logging_middleware - [Другое] 7965113363 @katya201299: -
+2026-09-23 21:21:47 - [INFO] - middlewares.logging_middleware - Обработано за: 0.159 сек.
+2026-09-23 21:21:47 - [INFO] - aiogram.event - Update id=499800179 is handled. Duration 171 ms by bot id=8994837787
+2026-09-23 21:21:58 - [INFO] - middlewares.logging_middleware - [Другое] 7965113363 @katya201299: -
+2026-09-23 21:21:59 - [INFO] - middlewares.logging_middleware - Обработано за: 0.732 сек.
+2026-09-23 21:21:59 - [INFO] - aiogram.event - Update id=499800180 is handled. Duration 733 ms by bot id=8994837787
+2026-09-23 21:22:04 - [INFO] - middlewares.logging_middleware - [Другое] 7965113363 @katya201299: -
+2026-09-23 21:22:04 - [INFO] - middlewares.logging_middleware - Обработано за: 0.155 сек.
+2026-09-23 21:22:04 - [INFO] - aiogram.event - Update id=499800181 is handled. Duration 156 ms by bot id=8994837787
+2026-09-23 21:22:06 - [INFO] - middlewares.logging_middleware - [Другое] 7965113363 @katya201299: -
+2026-09-23 21:22:06 - [INFO] - middlewares.logging_middleware - Обработано за: 0.135 сек.
+2026-09-23 21:22:06 - [INFO] - aiogram.event - Update id=499800182 is handled. Duration 135 ms by bot id=8994837787
+2026-09-23 21:22:08 - [INFO] - middlewares.logging_middleware - [Другое] 7965113363 @katya201299: -
+2026-09-23 21:22:08 - [INFO] - middlewares.logging_middleware - Обработано за: 0.141 сек.
+2026-09-23 21:22:08 - [INFO] - aiogram.event - Update id=499800183 is handled. Duration 142 ms by bot id=8994837787
+2026-09-23 21:22:10 - [INFO] - middlewares.logging_middleware - [Другое] 7965113363 @katya201299: -
+2026-09-23 21:22:11 - [INFO] - middlewares.logging_middleware - Обработано за: 0.392 сек.
+2026-09-23 21:22:11 - [INFO] - aiogram.event - Update id=499800184 is handled. Duration 393 ms by bot id=8994837787
+2026-09-23 21:22:16 - [INFO] - middlewares.logging_middleware - [Другое] 7965113363 @katya201299: -
+2026-09-23 21:22:16 - [INFO] - middlewares.logging_middleware - Обработано за: 0.149 сек.
+2026-09-23 21:22:16 - [INFO] - aiogram.event - Update id=499800185 is handled. Duration 149 ms by bot id=8994837787
+2026-09-23 21:22:19 - [INFO] - middlewares.logging_middleware - [Другое] 7965113363 @katya201299: -
+2026-09-23 21:22:19 - [INFO] - middlewares.logging_middleware - Обработано за: 0.264 сек.
+2026-09-23 21:22:19 - [INFO] - aiogram.event - Update id=499800186 is handled. Duration 265 ms by bot id=8994837787
+2026-09-23 21:23:57 - [INFO] - middlewares.logging_middleware - [Другое] 7965113363 @katya201299: -
+2026-09-23 21:23:57 - [ERROR] - middlewares.error_middleware - Ошибка: division by zero
+2026-09-23 21:23:57 - [ERROR] - middlewares.error_middleware - Traceback (most recent call last):
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 2\middlewares\error_middleware.py", line 26, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 2\middlewares\auth.py", line 26, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 2\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 2\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 2\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 284, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 2\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 172, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 2\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 164, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 2\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 192, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 2\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 2\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 2\handlers\start.py", line 18, in cmd_crash
+    result = 1 / 0
+             ~~^~~
+ZeroDivisionError: division by zero
+
+2026-09-23 21:23:57 - [INFO] - middlewares.logging_middleware - Обработано за: 0.132 сек.
+2026-09-23 21:23:57 - [INFO] - aiogram.event - Update id=499800187 is handled. Duration 132 ms by bot id=8994837787
+2026-09-23 21:24:14 - [INFO] - middlewares.logging_middleware - [Другое] 7965113363 @katya201299: -
+2026-09-23 21:24:15 - [INFO] - middlewares.logging_middleware - Обработано за: 0.186 сек.
+2026-09-23 21:24:15 - [INFO] - aiogram.event - Update id=499800188 is handled. Duration 187 ms by bot id=8994837787
+2026-09-29 17:26:37 - [INFO] - root - Бот инициализирован...
+2026-09-29 17:26:42 - [INFO] - aiogram.dispatcher - Start polling
+2026-09-29 17:26:42 - [INFO] - aiogram.dispatcher - Run polling for bot @Katya20121999_bot id=8994837787 - 'My first telegram bot'
+2026-09-29 17:26:50 - [INFO] - middlewares.logging_middleware - [Другое] 7965113363 @katya201299: -
+2026-09-29 17:26:51 - [INFO] - middlewares.logging_middleware - Обработано за: 1.050 сек.
+2026-09-29 17:26:51 - [INFO] - aiogram.event - Update id=499800228 is handled. Duration 1050 ms by bot id=8994837787
+2026-09-29 17:27:42 - [INFO] - aiogram.dispatcher - Polling stopped
+2026-09-29 17:27:42 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-09-29 17:27:42 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8994837787)
+2026-09-29 17:27:43 - [INFO] - aiogram.dispatcher - Polling stopped for bot @Katya20121999_bot id=8994837787 - 'My first telegram bot'
+2026-09-29 17:37:07 - [INFO] - root - Бот инициализирован...
+2026-09-29 17:37:13 - [INFO] - aiogram.dispatcher - Start polling
+2026-09-29 17:37:13 - [INFO] - aiogram.dispatcher - Run polling for bot @Katya20121999_bot id=8994837787 - 'My first telegram bot'
+2026-09-29 17:37:29 - [INFO] - middlewares.logging_middleware - [Другое] 7965113363 @katya201299: -
+2026-09-29 17:37:30 - [INFO] - middlewares.logging_middleware - Обработано за: 1.042 сек.
+2026-09-29 17:37:30 - [INFO] - aiogram.event - Update id=499800229 is handled. Duration 1043 ms by bot id=8994837787
+2026-09-29 17:37:38 - [INFO] - middlewares.logging_middleware - [Другое] 7965113363 @katya201299: -
+2026-09-29 17:37:38 - [INFO] - middlewares.logging_middleware - Обработано за: 0.327 сек.
+2026-09-29 17:37:38 - [INFO] - aiogram.event - Update id=499800230 is handled. Duration 327 ms by bot id=8994837787
+2026-09-29 17:37:45 - [INFO] - middlewares.logging_middleware - [Другое] 7965113363 @katya201299: -
+2026-09-29 17:37:46 - [INFO] - middlewares.logging_middleware - Обработано за: 0.287 сек.
+2026-09-29 17:37:46 - [INFO] - aiogram.event - Update id=499800231 is handled. Duration 288 ms by bot id=8994837787
+2026-09-29 17:37:48 - [INFO] - middlewares.logging_middleware - [Другое] 7965113363 @katya201299: -
+2026-09-29 17:37:48 - [INFO] - middlewares.logging_middleware - Обработано за: 0.294 сек.
+2026-09-29 17:37:48 - [INFO] - aiogram.event - Update id=499800232 is handled. Duration 295 ms by bot id=8994837787
+2026-09-29 17:37:51 - [INFO] - middlewares.logging_middleware - [Другое] 7965113363 @katya201299: -
+2026-09-29 17:37:51 - [INFO] - middlewares.logging_middleware - Обработано за: 0.564 сек.
+2026-09-29 17:37:51 - [INFO] - aiogram.event - Update id=499800233 is handled. Duration 565 ms by bot id=8994837787
+2026-09-29 17:37:53 - [INFO] - middlewares.logging_middleware - [Другое] 7965113363 @katya201299: -
+2026-09-29 17:37:53 - [INFO] - middlewares.logging_middleware - Обработано за: 0.294 сек.
+2026-09-29 17:37:53 - [INFO] - aiogram.event - Update id=499800234 is handled. Duration 294 ms by bot id=8994837787
+2026-09-29 17:37:57 - [INFO] - middlewares.logging_middleware - [Другое] 7965113363 @katya201299: -
+2026-09-29 17:37:58 - [INFO] - middlewares.logging_middleware - Обработано за: 0.309 сек.
+2026-09-29 17:37:58 - [INFO] - aiogram.event - Update id=499800235 is handled. Duration 310 ms by bot id=8994837787
+2026-09-29 17:38:01 - [INFO] - middlewares.logging_middleware - [Другое] 7965113363 @katya201299: -
+2026-09-29 17:38:01 - [INFO] - middlewares.logging_middleware - Обработано за: 0.315 сек.
+2026-09-29 17:38:01 - [INFO] - aiogram.event - Update id=499800236 is handled. Duration 316 ms by bot id=8994837787
+2026-09-29 17:38:05 - [INFO] - middlewares.logging_middleware - [Другое] 7965113363 @katya201299: -
+2026-09-29 17:38:05 - [INFO] - middlewares.logging_middleware - Обработано за: 0.293 сек.
+2026-09-29 17:38:05 - [INFO] - aiogram.event - Update id=499800237 is handled. Duration 294 ms by bot id=8994837787
+2026-09-29 17:38:07 - [INFO] - middlewares.logging_middleware - [Другое] 7965113363 @katya201299: -
+2026-09-29 17:38:07 - [INFO] - middlewares.logging_middleware - Обработано за: 0.298 сек.
+2026-09-29 17:38:07 - [INFO] - aiogram.event - Update id=499800238 is handled. Duration 299 ms by bot id=8994837787
+2026-09-29 17:38:16 - [INFO] - middlewares.logging_middleware - [Другое] 7965113363 @katya201299: -
+2026-09-29 17:38:16 - [INFO] - middlewares.logging_middleware - Обработано за: 0.370 сек.
+2026-09-29 17:38:16 - [INFO] - aiogram.event - Update id=499800239 is handled. Duration 371 ms by bot id=8994837787
+2026-09-29 17:38:19 - [INFO] - middlewares.logging_middleware - [Другое] 7965113363 @katya201299: -
+2026-09-29 17:38:19 - [INFO] - middlewares.logging_middleware - Обработано за: 0.390 сек.
+2026-09-29 17:38:19 - [INFO] - aiogram.event - Update id=499800240 is handled. Duration 390 ms by bot id=8994837787
+2026-09-29 17:38:23 - [INFO] - middlewares.logging_middleware - [Другое] 7965113363 @katya201299: -
+2026-09-29 17:38:23 - [INFO] - middlewares.logging_middleware - Обработано за: 0.293 сек.
+2026-09-29 17:38:23 - [INFO] - aiogram.event - Update id=499800241 is handled. Duration 294 ms by bot id=8994837787
+2026-09-29 17:38:26 - [INFO] - middlewares.logging_middleware - [Другое] 7965113363 @katya201299: -
+2026-09-29 17:38:26 - [INFO] - middlewares.logging_middleware - Обработано за: 0.360 сек.
+2026-09-29 17:38:26 - [INFO] - aiogram.event - Update id=499800242 is handled. Duration 361 ms by bot id=8994837787
+2026-09-29 17:38:29 - [INFO] - middlewares.logging_middleware - [Другое] 7965113363 @katya201299: -
+2026-09-29 17:38:30 - [INFO] - middlewares.logging_middleware - Обработано за: 0.334 сек.
+2026-09-29 17:38:30 - [INFO] - aiogram.event - Update id=499800243 is handled. Duration 335 ms by bot id=8994837787
+2026-09-29 17:38:31 - [INFO] - middlewares.logging_middleware - [Другое] 7965113363 @katya201299: -
+2026-09-29 17:38:32 - [INFO] - middlewares.logging_middleware - Обработано за: 0.997 сек.
+2026-09-29 17:38:32 - [INFO] - aiogram.event - Update id=499800244 is handled. Duration 998 ms by bot id=8994837787
+2026-09-29 17:38:41 - [INFO] - middlewares.logging_middleware - [Другое] 7965113363 @katya201299: -
+2026-09-29 17:38:41 - [ERROR] - middlewares.error_middleware - Ошибка: type object 'Survey' has no attribute 'where'
+2026-09-29 17:38:41 - [ERROR] - middlewares.error_middleware - Traceback (most recent call last):
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 3\middlewares\error_middleware.py", line 26, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 3\middlewares\auth.py", line 26, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 3\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 3\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 3\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 284, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 3\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 172, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 3\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 164, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 3\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 192, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 3\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 3\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 3\handlers\history.py", line 119, in handle_clear_history
+    await db.clear_user_history(user_id)
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 3\database\db.py", line 90, in clear_user_history
+    stmt = delete(Survey.where(Survey.user_id == user_id))
+                  ^^^^^^^^^^^^
+AttributeError: type object 'Survey' has no attribute 'where'
+
+2026-09-29 17:38:41 - [INFO] - middlewares.logging_middleware - Обработано за: 0.333 сек.
+2026-09-29 17:38:41 - [INFO] - aiogram.event - Update id=499800245 is handled. Duration 333 ms by bot id=8994837787
+2026-09-29 17:44:05 - [INFO] - middlewares.logging_middleware - [Другое] 7965113363 @katya201299: -
+2026-09-29 17:44:05 - [ERROR] - middlewares.error_middleware - Ошибка: type object 'Survey' has no attribute 'where'
+2026-09-29 17:44:05 - [ERROR] - middlewares.error_middleware - Traceback (most recent call last):
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 3\middlewares\error_middleware.py", line 26, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 3\middlewares\auth.py", line 26, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 3\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 3\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 3\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 284, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 3\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 172, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 3\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 164, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 3\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 192, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 3\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 3\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 3\handlers\history.py", line 119, in handle_clear_history
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 3\database\db.py", line 90, in clear_user_history
+    stmt = delete(Survey.where(Survey.user_id == user_id))
+                  ^^^^^^^^^^^^
+AttributeError: type object 'Survey' has no attribute 'where'
+
+2026-09-29 17:44:06 - [INFO] - middlewares.logging_middleware - Обработано за: 0.314 сек.
+2026-09-29 17:44:06 - [INFO] - aiogram.event - Update id=499800246 is handled. Duration 315 ms by bot id=8994837787
+2026-09-29 17:45:16 - [INFO] - middlewares.logging_middleware - [Другое] 7965113363 @katya201299: -
+2026-09-29 17:45:16 - [ERROR] - middlewares.error_middleware - Ошибка: type object 'Survey' has no attribute 'where'
+2026-09-29 17:45:16 - [ERROR] - middlewares.error_middleware - Traceback (most recent call last):
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 3\middlewares\error_middleware.py", line 26, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 3\middlewares\auth.py", line 26, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 3\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 3\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 3\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 284, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 3\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 172, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 3\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 164, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 3\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 192, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 3\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 3\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 3\handlers\history.py", line 119, in handle_clear_history
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 3\database\db.py", line 90, in clear_user_history
+    stmt = delete(Survey.where(Survey.user_id == user_id))
+                  ^^^^^^^^^^^^
+AttributeError: type object 'Survey' has no attribute 'where'
+
+2026-09-29 17:45:16 - [INFO] - middlewares.logging_middleware - Обработано за: 0.307 сек.
+2026-09-29 17:45:16 - [INFO] - aiogram.event - Update id=499800247 is handled. Duration 307 ms by bot id=8994837787
+2026-09-29 17:45:59 - [INFO] - middlewares.logging_middleware - [Другое] 7965113363 @katya201299: -
+2026-09-29 17:45:59 - [ERROR] - middlewares.error_middleware - Ошибка: type object 'Survey' has no attribute 'where'
+2026-09-29 17:45:59 - [ERROR] - middlewares.error_middleware - Traceback (most recent call last):
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 3\middlewares\error_middleware.py", line 26, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 3\middlewares\auth.py", line 26, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 3\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 3\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 3\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 284, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 3\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 172, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 3\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 164, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 3\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 192, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 3\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 3\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 3\handlers\history.py", line 119, in handle_clear_history
+  File "C:\Users\katya99\Desktop\my_first_tg_bot 3\database\db.py", line 90, in clear_user_history
+    # ПРАВИЛЬНО: делит принимает модель, а .where() применяется к результату функции delete()
+AttributeError: type object 'Survey' has no attribute 'where'
+
+2026-09-29 17:45:59 - [INFO] - middlewares.logging_middleware - Обработано за: 0.317 сек.
+2026-09-29 17:45:59 - [INFO] - aiogram.event - Update id=499800248 is handled. Duration 317 ms by bot id=8994837787
+2026-09-29 17:46:43 - [INFO] - aiogram.dispatcher - Polling stopped
+2026-09-29 17:46:43 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-09-29 17:46:43 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8994837787)
+2026-09-29 17:46:44 - [INFO] - aiogram.dispatcher - Polling stopped for bot @Katya20121999_bot id=8994837787 - 'My first telegram bot'
+2026-09-29 17:50:37 - [INFO] - root - Бот инициализирован...
+2026-09-29 17:50:43 - [INFO] - aiogram.dispatcher - Start polling
+2026-09-29 17:50:43 - [INFO] - aiogram.dispatcher - Run polling for bot @Katya20121999_bot id=8994837787 - 'My first telegram bot'
+2026-09-29 17:50:47 - [INFO] - middlewares.logging_middleware - [Другое] 7965113363 @katya201299: -
+2026-09-29 17:50:48 - [INFO] - middlewares.logging_middleware - Обработано за: 1.024 сек.
+2026-09-29 17:50:48 - [INFO] - aiogram.event - Update id=499800249 is handled. Duration 1025 ms by bot id=8994837787
+2026-09-29 17:50:51 - [INFO] - middlewares.logging_middleware - [Другое] 7965113363 @katya201299: -
+2026-09-29 17:50:51 - [INFO] - middlewares.logging_middleware - Обработано за: 0.374 сек.
+2026-09-29 17:50:51 - [INFO] - aiogram.event - Update id=499800250 is handled. Duration 376 ms by bot id=8994837787
+2026-09-29 17:51:00 - [INFO] - middlewares.logging_middleware - [Другое] 7965113363 @katya201299: -
+2026-09-29 17:51:00 - [INFO] - middlewares.logging_middleware - Обработано за: 0.289 сек.
+2026-09-29 17:51:00 - [INFO] - aiogram.event - Update id=499800251 is handled. Duration 290 ms by bot id=8994837787
+2026-09-29 17:53:27 - [INFO] - middlewares.logging_middleware - [Другое] 7965113363 @katya201299: -
+2026-09-29 17:53:27 - [INFO] - middlewares.logging_middleware - Обработано за: 0.362 сек.
+2026-09-29 17:53:27 - [INFO] - aiogram.event - Update id=499800252 is handled. Duration 363 ms by bot id=8994837787
+2026-09-29 17:54:45 - [INFO] - middlewares.logging_middleware - [Другое] 7965113363 @katya201299: -
+2026-09-29 17:54:46 - [INFO] - middlewares.logging_middleware - Обработано за: 0.303 сек.
+2026-09-29 17:54:46 - [INFO] - aiogram.event - Update id=499800253 is handled. Duration 305 ms by bot id=8994837787
+2026-09-29 17:54:53 - [INFO] - aiogram.dispatcher - Polling stopped
+2026-09-29 17:54:53 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-09-29 17:54:53 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8994837787)
+2026-09-29 17:54:53 - [INFO] - aiogram.dispatcher - Polling stopped for bot @Katya20121999_bot id=8994837787 - 'My first telegram bot'
+2026-09-29 17:55:00 - [INFO] - root - Бот инициализирован...
+2026-09-29 17:55:05 - [INFO] - aiogram.dispatcher - Start polling
+2026-09-29 17:55:05 - [INFO] - aiogram.dispatcher - Run polling for bot @Katya20121999_bot id=8994837787 - 'My first telegram bot'
+2026-09-29 17:55:15 - [INFO] - middlewares.logging_middleware - [Другое] 7965113363 @katya201299: -
+2026-09-29 17:55:16 - [INFO] - middlewares.logging_middleware - Обработано за: 1.032 сек.
+2026-09-29 17:55:16 - [INFO] - aiogram.event - Update id=499800254 is handled. Duration 1032 ms by bot id=8994837787
+2026-09-29 17:55:18 - [INFO] - middlewares.logging_middleware - [Другое] 7965113363 @katya201299: -
+2026-09-29 17:55:18 - [INFO] - middlewares.logging_middleware - Обработано за: 0.001 сек.
+2026-09-29 17:55:18 - [INFO] - aiogram.event - Update id=499800255 is not handled. Duration 1 ms by bot id=8994837787
+2026-09-29 17:55:37 - [INFO] - middlewares.logging_middleware - [Другое] 7965113363 @katya201299: -
+2026-09-29 17:55:37 - [INFO] - middlewares.logging_middleware - Обработано за: 0.403 сек.
+2026-09-29 17:55:37 - [INFO] - aiogram.event - Update id=499800256 is handled. Duration 404 ms by bot id=8994837787
+2026-09-29 17:55:38 - [INFO] - middlewares.logging_middleware - [Другое] 7965113363 @katya201299: -
+2026-09-29 17:55:38 - [INFO] - middlewares.logging_middleware - Обработано за: 0.001 сек.
+2026-09-29 17:55:38 - [INFO] - aiogram.event - Update id=499800257 is not handled. Duration 1 ms by bot id=8994837787
+2026-09-29 17:55:45 - [INFO] - middlewares.logging_middleware - [Другое] 7965113363 @katya201299: -
+2026-09-29 17:55:45 - [INFO] - middlewares.logging_middleware - Обработано за: 0.592 сек.
+2026-09-29 17:55:45 - [INFO] - aiogram.event - Update id=499800258 is handled. Duration 592 ms by bot id=8994837787
+2026-09-29 17:55:50 - [INFO] - middlewares.logging_middleware - [Другое] 7965113363 @katya201299: -
+2026-09-29 17:55:50 - [INFO] - middlewares.logging_middleware - Обработано за: 0.003 сек.
+2026-09-29 17:55:50 - [INFO] - aiogram.event - Update id=499800259 is not handled. Duration 4 ms by bot id=8994837787
+2026-09-29 18:04:08 - [INFO] - middlewares.logging_middleware - [Другое] 7965113363 @katya201299: -
+2026-09-29 18:04:08 - [INFO] - middlewares.logging_middleware - Обработано за: 0.004 сек.
+2026-09-29 18:04:08 - [INFO] - aiogram.event - Update id=499800260 is not handled. Duration 6 ms by bot id=8994837787
+2026-09-29 18:05:33 - [INFO] - middlewares.logging_middleware - [Другое] 7965113363 @katya201299: -
+2026-09-29 18:05:33 - [INFO] - middlewares.logging_middleware - Обработано за: 0.001 сек.
+2026-09-29 18:05:33 - [INFO] - aiogram.event - Update id=499800261 is not handled. Duration 2 ms by bot id=8994837787
+2026-09-29 18:05:41 - [INFO] - middlewares.logging_middleware - [Другое] 7965113363 @katya201299: -
+2026-09-29 18:05:41 - [INFO] - middlewares.logging_middleware - Обработано за: 0.380 сек.
+2026-09-29 18:05:41 - [INFO] - aiogram.event - Update id=499800262 is handled. Duration 381 ms by bot id=8994837787
+2026-09-29 18:05:42 - [INFO] - middlewares.logging_middleware - [Другое] 7965113363 @katya201299: -
+2026-09-29 18:05:42 - [INFO] - middlewares.logging_middleware - Обработано за: 0.001 сек.
+2026-09-29 18:05:42 - [INFO] - aiogram.event - Update id=499800263 is not handled. Duration 1 ms by bot id=8994837787
+2026-09-29 18:06:12 - [INFO] - aiogram.dispatcher - Polling stopped
+2026-09-29 18:06:12 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-09-29 18:06:12 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8994837787)
+2026-09-29 18:06:13 - [INFO] - aiogram.dispatcher - Polling stopped for bot @Katya20121999_bot id=8994837787 - 'My first telegram bot'
+2026-09-29 18:06:18 - [INFO] - root - Бот инициализирован...
+2026-09-29 18:06:24 - [INFO] - aiogram.dispatcher - Start polling
+2026-09-29 18:06:24 - [INFO] - aiogram.dispatcher - Run polling for bot @Katya20121999_bot id=8994837787 - 'My first telegram bot'
+2026-09-29 18:06:35 - [INFO] - middlewares.logging_middleware - [Другое] 7965113363 @katya201299: -
+2026-09-29 18:06:37 - [INFO] - middlewares.logging_middleware - Обработано за: 1.276 сек.
+2026-09-29 18:06:37 - [INFO] - aiogram.event - Update id=499800264 is handled. Duration 1276 ms by bot id=8994837787
+2026-09-29 18:07:31 - [INFO] - aiogram.dispatcher - Polling stopped
+2026-09-29 18:07:31 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-09-29 18:07:31 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8994837787)
+2026-09-29 18:07:31 - [INFO] - aiogram.dispatcher - Polling stopped for bot @Katya20121999_bot id=8994837787 - 'My first telegram bot'
+2026-09-29 18:07:56 - [INFO] - root - Бот инициализирован...
+2026-09-29 18:08:02 - [INFO] - aiogram.dispatcher - Start polling
+2026-09-29 18:08:02 - [INFO] - aiogram.dispatcher - Run polling for bot @Katya20121999_bot id=8994837787 - 'My first telegram bot'
+2026-09-29 18:08:12 - [INFO] - middlewares.logging_middleware - [Другое] 7965113363 @katya201299: -
+2026-09-29 18:08:13 - [INFO] - middlewares.logging_middleware - Обработано за: 1.047 сек.
+2026-09-29 18:08:13 - [INFO] - aiogram.event - Update id=499800265 is handled. Duration 1048 ms by bot id=8994837787
